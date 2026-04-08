@@ -41,4 +41,5 @@ Open frontend/index.html
 - Add authentication
 
 ## 👩‍💻 Author
-Your Name
+Rufina Mary Joyce S
+GitHub: https://github.com/rufinajoyce25-dotcom
