@@ -1,19 +1,44 @@
+# 💳 Credit Card Fraud Detection
 
-STEP 1:
+## 📌 Overview
+This project uses machine learning to detect fraudulent credit card transactions.
+
+## 🚀 Features
+- Fraud detection using trained ML model
+- Backend built with Python
+- Frontend interface for user input
+- Real-time prediction
+
+## 🛠️ Tech Stack
+- Python
+- Flask
+- HTML, CSS, JavaScript
+- Machine Learning
+
+## 📂 Project Structure
+backend/ → Python backend  
+frontend/ → UI files  
+dataset/ → Data used  
+
+## ▶️ How to Run
+
+### Step 1: Install dependencies
 pip install -r requirements.txt
 
-STEP 2:
-cd backend
-python app.py
+### Step 2: Run backend
+cd backend  
+python app.py  
 
-STEP 3:
-Open browser:
-http://127.0.0.1:5000/setup
+### Step 3: Open in browser
+http://127.0.0.1:5000/setup  
 
-STEP 4:
-Open frontend/index.html manually
+### Step 4: Open frontend
+Open frontend/index.html
 
-STEP 5:
-Enter values → Verify
+## 📊 Future Improvements
+- Deploy online
+- Improve model accuracy
+- Add authentication
 
-
+## 👩‍💻 Author
+Your Name
