@@ -1,4 +1,4 @@
-# 💳 Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detection Using Face Recognition
 
 ## 📌 Overview
 This project uses machine learning to detect fraudulent credit card transactions.
