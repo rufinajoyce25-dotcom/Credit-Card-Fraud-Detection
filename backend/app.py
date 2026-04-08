@@ -7,9 +7,7 @@ import numpy as np
 
 app = Flask(__name__)
 CORS(app)
-@app.route('/')
-def home():
-    return "✅ Credit Card Fraud Detection API is running!"
+
 # -----------------------------
 # LOAD DATASET
 # -----------------------------
@@ -32,9 +30,7 @@ os.makedirs(FACES_DIR, exist_ok=True)
 face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
 )
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
-    
+
 # -----------------------------
 # FACE REGISTRATION (CROPPED)
 # -----------------------------
