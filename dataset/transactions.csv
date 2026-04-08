@@ -1,0 +1,23 @@
+name,password,amount,is_fraud
+John Doe,pass123,100,0
+John Doe,pass123,150,0
+John Doe,pass123,200,0
+John Doe,pass123,5000,1
+John Doe,pass123,7000,1
+
+Jane Smith,jsmith@123,200,0
+Jane Smith,jsmith@123,250,0
+Jane Smith,jsmith@123,300,0
+Jane Smith,jsmith@123,6000,1
+Jane Smith,jsmith@123,8000,1
+
+Rahul Kumar,rahul@321,120,0
+
+Rahul Kumar,rahul@321,180,0
+Rahul Kumar,rahul@321,150,0
+Rahul Kumar,rahul@321,9000,1
+
+Anita Sharma,anita@111,200,0
+Anita Sharma,anita@111,220,0
+Anita Sharma,anita@111,180,0
+Anita Sharma,anita@111,7500,1

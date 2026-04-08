@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>     CREDIT CARD FRAUD DETECTION</h1>
+    </div>
+
+    <div class="main">
+
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+            <h2>SECURE YOUR TRANSACTION</h2>
+
+            <label>Card Holder Name</label>
+            <input type="text" placeholder="John Doe">
+
+            <label>Password</label>
+            <input type="password" placeholder="********">
+
+            <label>Amount</label>
+            <input type="number" value="150">
+
+            <button onclick="submitForm()">VERIFY →</button>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+
+            <!-- CARD -->
+            <div class="card-box">
+                <img src="card.png" alt="Credit Card" class="real-card">
+            </div>
+
+            <!-- FACE RECOGNITION -->
+            <div class="face-box">
+                <div class="face-content">
+
+                    <!-- IMAGE LEFT -->
+                    <img src="logo.png" alt="Security Logo" class="face-logo">
+
+                    <!-- TEXT RIGHT -->
+                    <div class="face-text">
+                        <h2>BIOMETRIC AUTHENTICATION</h2>
+                        <h2>FACE RECOGNITION</h2>
+                        <button onclick="registerFace()">REGISTER FACE</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- STATUS -->
+            <div class="status-box">
+                <p>STATUS: ANALYZING TRANSACTION...</p>
+                <div class="status-indicators">
+                    <span class="safe">✅SAFE TRANSACTION</span>
+                    <span class="fraud">🚨SUSPICIOUS ACTIVITY</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

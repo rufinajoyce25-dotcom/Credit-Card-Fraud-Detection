@@ -1,0 +1,39 @@
+// for credit card fraud detection project
+<!DOCTYPE html>     
+<html>  
+<head>  
+    <title>Fraud Detection System</title>  
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+    <div class="card">
+        <h2>Fraud Detection System</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simulate authentication (replace with real API call)
+            if(username === 'user' && password === 'pass') {
+                document.getElementById('output').innerText = 'Login successful! Verifying face...';
+                // Simulate face verification
+                setTimeout(() => {
+                    document.getElementById('output').innerText = 'Face verified! Access granted.';
+                }, 2000);
+            } else {
+                document.getElementById('output').innerText = 'Invalid credentials. Try again.';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
