@@ -1,3 +1,4 @@
+
 STEP 1:
 pip install -r requirements.txt
 
@@ -14,3 +15,5 @@ Open frontend/index.html manually
 
 STEP 5:
 Enter values → Verify
+
+
