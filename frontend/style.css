@@ -7,11 +7,24 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* BACKGROUND */
+/* BACKGROUND (UPDATED) */
 body {
-    background: linear-gradient(135deg, #f7f3ec, #e8dfcf);
+    background: 
+        linear-gradient(135deg, rgba(247,243,236,0.6), rgba(232,223,207,0.6)),
+        url("glass.png") no-repeat center center/cover;
     color: #2c2218;
     animation: fadeIn 1s ease forwards;
+    min-height: 100vh;
+}
+
+/* GLASS OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    z-index: -1;
 }
 
 /* PAGE LOAD */
@@ -57,8 +70,7 @@ body {
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(12px);
-    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.795);
-
+    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.308);
     animation: floatCard 4s ease-in-out infinite;
 }
 
@@ -129,17 +141,16 @@ body {
 
 /* CARD BOX */
 .card-box {
-    border-radius: 12px;
-    background: rgba(255,255,255,0.4);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.35);
     backdrop-filter: blur(10px);
-    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.795);
-
+    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     overflow: hidden;
-    perspective: 1000px;
+    perspective: 800px;
 }
 
 .card-box:hover {
@@ -148,11 +159,10 @@ body {
 
 /* CARD IMAGE */
 .real-card {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transform-style: preserve-3d;
-
     animation: zoomCard 6s ease-in-out infinite;
 }
 
@@ -169,11 +179,10 @@ body {
 .face-box {
     padding: 20px;
     border-radius: 18px;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.35);
     backdrop-filter: blur(10px);
-    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.795);
+    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.4);
     text-align: left;
-
     animation: slideInRight 1s ease forwards;
 }
 
@@ -201,8 +210,7 @@ body {
     height: 110px;
     object-fit: contain;
     border-radius: 12px;
-    box-shadow: 0 20px 15px rgba(223, 198, 101, 0.97);
-
+    box-shadow: 0 10px 20px rgba(198,166,75,0.4);
     animation: logoFloat 5s ease-in-out infinite;
 }
 
@@ -226,7 +234,7 @@ body {
 /* FACE BUTTON */
 .face-box button {
     background: #b77b43;
-    color: #fdfafa;
+    color: #fff;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
@@ -245,8 +253,8 @@ body {
     padding: 15px;
     border-radius: 18px;
     font-weight: bold;
-    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.795);
-    background: rgba(255,255,255,0.5);
+    box-shadow: 0 20px 25px rgba(238, 200, 10, 0.4);
+    background: rgba(255,255,255,0.45);
     backdrop-filter: blur(10px);
 }
 
